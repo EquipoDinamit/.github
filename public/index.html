@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Receptor</title>
+	<style>
+	.objeto{
+		height: 100px;
+		width: 100px;
+		background-color: rgb(214, 72, 28);
+		border-radius: 50%;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>Sistemas de cómputo y redes</h1>
+	<div id="capa"></div>
+	<!--<div class="objeto" id="objeto"></div>-->
+	<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+	<script >
+		
+		const socket = io();
+		
+		let velocidad = 50;
+		let arriba = 0;
+		let izq = 0;
+		let objeto;
+		let arr;
+		let ejeX;
+		let ejeY;
+		let mensaje;
+
+		function addElemento(idObjeto){
+		  var capa = document.getElementById("capa");
+		  var objetoU = document.createElement("objeto");
+		  objetoU.innerHTML ='<div class="objeto" id='+'"'+socket.id+'"'+'></div>';
+		  capa.appendChild(objetoU);
+		}
+
+		function moverDerecha(){
+			izq += velocidad;
+			objeto.style.marginLeft = izq +"px";
+		}
+
+		function moverIzquierda(){
+			izq -= velocidad;
+			objeto.style.marginLeft = izq +"px";
+		}
+
+		function moverArriba(){
+			arriba -= velocidad;
+			objeto.style.marginTop = arriba +"px";
+		}
+
+		function moverAbajo(){
+			arriba += velocidad;
+			objeto.style.marginTop = arriba +"px";
+		}
+
+
+		document.addEventListener("keydown", function(evento){
+			if (evento.keyCode == "39"){
+				moverDerecha();
+			}
+			if (evento.keyCode == "37"){
+				moverIzquierda();
+			}
+			if (evento.keyCode == "38"){
+				moverArriba();
+			}
+			if (evento.keyCode == "40"){
+				moverAbajo();
+			}
+		});
+
+		socket.on('msg', function(data){
+			console.log(data);/*		
+			arr = data.split(',');
+			ejeX = arr[0];
+			console.log('Eje x es: '+ejeX);
+			ejeY = arr[1];
+			console.log('Eje y es: '+ejeY);
+			console.log(' ');*/
+
+			if(data == 1){
+				moverArriba();
+			}
+			if(data == 2){
+				moverAbajo();
+			}
+			if(data == 3){
+				moverIzquierda();
+			}
+			if(data == 4){
+				moverDerecha();
+			}
+		});
+
+		socket.on('id',function(id){
+			console.log(socket.id);
+			if(id=='emisor'){
+				addElemento();
+				console.log('<div class="objeto" id='+'"'+socket.id+'"'+'></div>');
+			}
+		});
+
+	</script>
+</body>
+</html>
