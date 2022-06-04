@@ -1,6 +1,6 @@
 # Examen #3 Examen Práctico
 _Se realizo un Servidor que maneja el protocolo TCP y permite la conexión de un cliente emisor y uno receptor._
-![tcpserver](https://github.com/DanielAtondo/Examen2/blob/main/Imagenes/Conexi%C3%B3nTCP.png "Diagrama del modelo TCP Cliente-Servidor")
+![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
 ## Configuración de los microcontroladores
 * **Emisor:** 
   * Descargar el Archivo "CodigoEmisor.ino".
