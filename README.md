@@ -4,13 +4,13 @@ _Se realizo un Servidor que maneja el protocolo TCP y permite la conexión de un
 
 ## Cliente emisor
 
-### Circuitos
-<strong>Instrucciones:</strong> 
+### Circuito
+<strong>Instrucciones: (Instrucciones del circuito)</strong> 
 Los materiales que se ocupan son...<br>
 
 <img src="" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
-<strong>Emisor:</strong> 
+<strong>Emisor: (Instrucciones del codigo de arduino)</strong> 
 <ul>
  <li>Descargar el Archivo "CodigoEmisor.ino".</li>
  <li>Abrir el archivo en el IDE de Arduino.</li>
@@ -19,12 +19,15 @@ Los materiales que se ocupan son...<br>
 </ul>
 
 ## Servidor
+(Explicacion del servidor)<br>
 En caso de tener un modem de INFINITUM ingresar a http://192.168.1.254/login.html y buscar el apartado "DMZ" (Demilitarized Zone ó Zona desmilitarizada) y activamos la función DMZ.<br>
 Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección "Reenvió de Puertos" definimos un puerto nuevo y especificamos que se trata de un Protocolo TCP.<br>
 <strong>Nota:</strong> Es importante guardar los datos de la Dirección IP Pública.
 ## Cliente receptor 
+(Explicacion del html)
 
 ## Instrucciones 
+(Instrucciones para ejecutar el sistema)
 <ul>
  <li>Instalar Python</li>
  <li>Instalar LABVIEW</li>
@@ -36,5 +39,4 @@ Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección
   <li>En caso de ser el Emisor abrimos el VI "Emisor.vi" en el IDE Labview
  </ul>
 </ul>
-# Cosas Pendientes
-actualizar la configuracion del micro para el emisor y el circuito del emisor
+
