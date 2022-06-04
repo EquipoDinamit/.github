@@ -5,9 +5,8 @@ _Se realizo un Servidor que maneja el protocolo TCP y permite la conexión de un
 ## Cliente emisor
 
 ### Circuito
-<strong>Instrucciones: (Instrucciones del circuito)</strong> 
+<strong>Instrucciones: (Instrucciones del circuito)<br></strong>
 Los materiales que se ocupan son...<br>
-
 <img src="" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
 <strong>Emisor: (Instrucciones del codigo de arduino)</strong> 
@@ -23,6 +22,7 @@ Los materiales que se ocupan son...<br>
 En caso de tener un modem de INFINITUM ingresar a http://192.168.1.254/login.html y buscar el apartado "DMZ" (Demilitarized Zone ó Zona desmilitarizada) y activamos la función DMZ.<br>
 Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección "Reenvió de Puertos" definimos un puerto nuevo y especificamos que se trata de un Protocolo TCP.<br>
 <strong>Nota:</strong> Es importante guardar los datos de la Dirección IP Pública.
+
 ## Cliente receptor 
 (Explicacion del html)
 
@@ -39,4 +39,3 @@ Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección
   <li>En caso de ser el Emisor abrimos el VI "Emisor.vi" en el IDE Labview
  </ul>
 </ul>
-
