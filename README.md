@@ -1,5 +1,6 @@
 # Examen #3 Examen Práctico
-_Se realizo un Servidor que maneja el protocolo TCP y permite la conexión de un cliente emisor y uno receptor._
+_Por medio de harware realizar acciones en una pagina web utilizando un servidor con WebSockets._
+
 ![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
 
 ## Cliente emisor
