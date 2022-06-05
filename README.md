@@ -5,7 +5,7 @@ _Por medio de hardware realizar acciones en una página web utilizando un servid
 
 El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, uno un cliente emisor (controlado por hardware) y otro un cliente receptor (página web con html) mientras que el tercero es el servidor que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 
-## Cliente emisor
+# Cliente emisor
 
 ### Circuito
 <strong>Instrucciones: (Instrucciones del circuito)<br></strong>
@@ -21,6 +21,10 @@ A continuacion armar el circuito de la imagen.
 
 <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/Circuito%20emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
+Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
+
+### Código
+
 <strong>Emisor.ino: (Instrucciones del codigo de arduino)</strong> 
 <ul>
  <li>Descargar el Archivo "CodigoEmisor.ino".</li>
@@ -29,18 +33,18 @@ A continuacion armar el circuito de la imagen.
  <li>Darle al boton de "Subir/Upload".</li>
 </ul>
 
-Lo que se espera del código es que cada botón nos regrese un valor de 1 a 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
+Lo que se espera del código "CodigoEmisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
 
 <strong>ClienteEmisor.py: (Instrucciones del codigo de python)</strong>
 
 
-## Servidor
+# Servidor
 (Explicacion del servidor)<br>
 En caso de tener un modem de INFINITUM ingresar a http://192.168.1.254/login.html y buscar el apartado "DMZ" (Demilitarized Zone ó Zona desmilitarizada) y activamos la función DMZ.<br>
 Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección "Reenvió de Puertos" definimos un puerto nuevo y especificamos que se trata de un Protocolo TCP.<br>
 <strong>Nota:</strong> Es importante guardar los datos de la Dirección IP Pública.
 
-## Cliente receptor 
+# Cliente receptor 
 (Explicacion del html)
 
 ## Instrucciones 
