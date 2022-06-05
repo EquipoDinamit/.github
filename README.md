@@ -1,4 +1,4 @@
-# Examen #3 Examen Práctico
+# Examen #3 Examen Práctico (Editando...)
 _Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets._
 
 ![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
