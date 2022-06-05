@@ -21,13 +21,16 @@ A continuacion armar el circuito de la imagen.
 
 <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/Circuito%20emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
-<strong>Emisor: (Instrucciones del codigo de arduino)</strong> 
+<strong>Emisor.ino: (Instrucciones del codigo de arduino)</strong> 
 <ul>
  <li>Descargar el Archivo "CodigoEmisor.ino".</li>
  <li>Abrir el archivo en el IDE de Arduino.</li>
  <li>En la pestaña de Herramientas/Tools seleccionamos la Placa en la que se desea subir el codigo y tambien seleccionamos el Puerto al que este conectado el microocontrolador.</li>
  <li>Darle al boton de "Subir/Upload".</li>
 </ul>
+
+<strong>ClienteEmisor.py: (Instrucciones del codigo de python)</strong>
+
 
 ## Servidor
 (Explicacion del servidor)<br>
