@@ -8,7 +8,6 @@ El sistema se compone de tres módulos o bloques independientes que interactúan
 # Cliente emisor
 
 ### Circuito
-<strong>Instrucciones: (Instrucciones del circuito)<br></strong>
 Los materiales que se utilizaron son: <br>
 <ul>
  <li>Arduino uno.</li>
@@ -25,7 +24,7 @@ Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
 
 ### Código
 
-<strong>Emisor.ino: (Instrucciones del codigo de arduino)</strong> 
+<strong>Emisor.ino:</strong> 
 <ul>
  <li>Descargar el Archivo "CodigoEmisor.ino".</li>
  <li>Abrir el archivo en el IDE de Arduino.</li>
