@@ -3,7 +3,7 @@ _Por medio de hardware realizar acciones en una página web utilizando un servid
 
 ![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
 
-El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, uno un cliente emisor (controlado por hardware) y otro un cliente receptor (página web con html) mientras que el tercero es el servidor que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
+El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un cliente emisor (controlado por hardware), un cliente receptor (página web con html) y el servidor que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 
 # Cliente emisor
 
