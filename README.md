@@ -29,6 +29,8 @@ A continuacion armar el circuito de la imagen.
  <li>Darle al boton de "Subir/Upload".</li>
 </ul>
 
+Lo que se espera del código es que cada botón nos regrese un valor de 1 a 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
+
 <strong>ClienteEmisor.py: (Instrucciones del codigo de python)</strong>
 
 
