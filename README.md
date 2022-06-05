@@ -7,7 +7,8 @@ _Se realizo un Servidor que maneja el protocolo TCP y permite la conexión de un
 ### Circuito
 <strong>Instrucciones: (Instrucciones del circuito)<br></strong>
 Los materiales que se ocupan son...<br>
-<img src="" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
+
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/Circuito%20emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
 <strong>Emisor: (Instrucciones del codigo de arduino)</strong> 
 <ul>
