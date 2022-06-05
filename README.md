@@ -9,7 +9,15 @@ El sistema se compone de tres módulos o bloques independientes que interactúan
 
 ### Circuito
 <strong>Instrucciones: (Instrucciones del circuito)<br></strong>
-Los materiales que se ocupan son...<br>
+Los materiales que se utilizaron son: <br>
+<ul>
+ <li>Arduino uno.</li>
+ <li>8 resistenciias de 1k ohms.</li>
+ <li>1 Protoboard.</li>
+ <li>Push buttos.</li>
+</ul>
+
+A continuacion armar el circuito de la imagen.
 
 <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/Circuito%20emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
