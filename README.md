@@ -72,7 +72,6 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
    <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm start</b></li>
   </ul>
  como resultado en la consola se despliega el mensaje "Servidor corriendo en http://localhost:80" y con eso sabemos que todo salió bien.</li>
- <li></li>
 </ul>
 
 # Cliente receptor 
