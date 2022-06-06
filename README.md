@@ -56,7 +56,7 @@ Los botones tienen asignados los números del 1 al 6 y el 13, además, cada bot�
 </ul>
 Lo anterior debería desplegar una pequeña ventana donde se puede seleccionar el puerto del arduino y se debe introducir el usuario y el servidor al que se quiere conectar. Y así sabemos que todo salio bien.<br>
  
-<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/interfaz.png" alt="Circuito Emisor" style="height: 30%; width:50%;"/>
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/interfaz.png" alt="Circuito Emisor" style="height: 30%; width:50%;"/><br>
 El nombre de usuario ingresado será el que se use para validar el acceso en el <b>"index.html"</b>.<br>
  
 Lo que se espera del código "ClienteEmisor.py" es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
