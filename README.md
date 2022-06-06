@@ -26,7 +26,7 @@ Los materiales que se utilizaron son: <br>
 
 A continuacion armar el circuito de la imagen.
 
-<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/Circuito%20emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/CircuitoEmisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
 Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
 
