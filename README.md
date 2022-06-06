@@ -58,6 +58,8 @@ En caso de tener un modem de INFINITUM ingresar a http://192.168.1.254/login.htm
 Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección "Reenvió de Puertos" definimos un puerto nuevo y especificamos que se trata de un Protocolo TCP.<br>
 <b>Nota:</b> Es importante guardar los datos de la Dirección IP Pública.
 
+### Código
+
 <b>main.js:</b><br>
 Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 <ul>
