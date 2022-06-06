@@ -24,16 +24,16 @@ Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
 
 ### Código
 
-<strong>Emisor.ino:</strong> 
+<b>Emisor.ino:</b> 
 <ul>
  <li>Abrir el archivo en el IDE de Arduino.</li>
  <li>En la pestaña de Herramientas/Tools seleccionamos la Placa en la que se desea subir el codigo y tambien seleccionamos el Puerto al que este conectado el microocontrolador.</li>
  <li>Darle al boton de "Subir/Upload".</li>
 </ul>
 
-Lo que se espera del código "CodigoEmisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
+Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
 
-<strong>ClienteEmisor.py: (Instrucciones del codigo de python)</strong>
+<b>ClienteEmisor.py:</b>
 <ul>
  <li>Desde la ubicacion del archivo "Cliente emisor.py" abrir la consola (cmd) y ejecutar el programa.</li>
  <ul>
@@ -44,24 +44,9 @@ Lo que se espera del código "CodigoEmisor.ino" es que cada botón nos regrese u
 Lo que se espera del código es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 
 # Servidor
-(Explicacion del servidor)<br>
 En caso de tener un modem de INFINITUM ingresar a http://192.168.1.254/login.html y buscar el apartado "DMZ" (Demilitarized Zone ó Zona desmilitarizada) y activamos la función DMZ.<br>
 Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección "Reenvió de Puertos" definimos un puerto nuevo y especificamos que se trata de un Protocolo TCP.<br>
-<strong>Nota:</strong> Es importante guardar los datos de la Dirección IP Pública.
+<b>Nota:</b> Es importante guardar los datos de la Dirección IP Pública.
 
 # Cliente receptor 
-(Explicacion del html)
 
-## Instrucciones 
-(Instrucciones para ejecutar el sistema)
-<ul>
- <li>Instalar Python</li>
- <li>Instalar LABVIEW</li>
- <li>Instalar IDE Arduino</li>
- <li>Abrir el codigo con "Python"</li>
- <ul>
-  <li>En caso de ser el Servidor abrimos el archivo "ServidorTCP.py" con Python.</li>
-  <li>En caso de ser el Receptor abrimos el archivo "ClienteTCP.pu" con nuestro editor de codigo favorito modificamos el valor de la variable "puertoCOM" con el Puerto al que este conectado el arduino previamente cargado con el codigo del microcontrolador.</li>
-  <li>En caso de ser el Emisor abrimos el VI "Emisor.vi" en el IDE Labview
- </ul>
-</ul>
