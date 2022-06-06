@@ -37,7 +37,8 @@ Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valo
 <ul>
  <li>Desde la ubicacion del archivo "Cliente emisor.py" abrir la consola (cmd) y ejecutar el programa.</li>
  <ul>
-  <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\ExamenU3_1></i><b>python ClienteEmisor.py</b></li>
+  <li><b>Ejemplo:</b><br>
+    <i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>python ClienteEmisor.py</b></li>
  </ul>
 </ul>
 
