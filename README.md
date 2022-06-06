@@ -1,7 +1,8 @@
 # Examen #3 Examen Práctico (Editando...)
 
 ## Contenido
-1. [Resumen](#Resumen) 2. [Cliente emisor](#Cliente-emisor)
+1. [Resumen](#Resumen) 
+2. [Cliente emisor](#Cliente-emisor)
 3. [Servidor](#Servidor)
 4. [Cliente receptor](#Cliente-receptor)
 
@@ -61,10 +62,11 @@ Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección
 Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 <ul>
  <li>Tener descargados por lo menos el "package.json" y el servidor "main.js" en la carpeta que se está trabajando.</li>
- <li>Desde la ubicación dentro de la carpeta abrir la consola (cmd) y escribir lo siguiente:</li>
+ <li>Desde la ubicación dentro de la carpeta abrir la consola (cmd) y escribir lo siguiente:
   <ul>
    <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm install</b></li>
   </ul>
+  <br>esto crea dos nuevos elementos en la carpeta de trabajo, una carpeta llamada <b>"node_modules"</b> que es donde se almacenan todas las dependencias y librerías que utilizas en tu proyecto nodejs y el <b>"package-lock.json"</b> que es como un historial de las operaciones <i>npm</i> que modifiquen el <b>"node_modules"</b>.</li>
 </ul>
 
 # Cliente receptor 
