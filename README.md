@@ -1,10 +1,11 @@
 # Examen #3 Examen Práctico (Editando...)
 
-## Table of Contents
-1. [Cliente emisor](#Cliente-emisor)
-2. [Servidor](#Servidor)
-3. [Cliente receptor](#Cliente-receptor)
+## Contenido
+1. [Resumen](#Resumen) 2. [Cliente emisor](#Cliente-emisor)
+3. [Servidor](#Servidor)
+4. [Cliente receptor](#Cliente-receptor)
 
+# Resumen
 </A><i>Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets.</i>
 
 ![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
