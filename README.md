@@ -66,7 +66,7 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
   <ul>
    <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm install</b></li>
   </ul>
-  <br>esto crea dos nuevos elementos en la carpeta de trabajo, una carpeta llamada <b>"node_modules"</b> que es donde se almacenan todas las dependencias y librerías que utilizas en tu proyecto nodejs y el <b>"package-lock.json"</b> que es como un historial de las operaciones <i>npm</i> que modifiquen el <b>"node_modules"</b>.</li>
+  esto crea dos nuevos elementos en la carpeta de trabajo, una carpeta llamada <b>"node_modules"</b> que es donde se almacenan todas las dependencias y librerías que utilizas en tu proyecto nodejs y el <b>"package-lock.json"</b> que es como un historial de las operaciones <i>npm</i> que modifiquen el <b>"node_modules"</b>.</li>
 </ul>
 
 # Cliente receptor 
