@@ -3,7 +3,7 @@ _Por medio de hardware realizar acciones en una página web utilizando un servid
 
 ![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
 
-El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un cliente emisor (controlado por hardware), un cliente receptor (página web con html) y el servidor que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
+El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 
 # Cliente emisor
 
@@ -26,7 +26,6 @@ Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
 
 <strong>Emisor.ino:</strong> 
 <ul>
- <li>Descargar el Archivo "CodigoEmisor.ino".</li>
  <li>Abrir el archivo en el IDE de Arduino.</li>
  <li>En la pestaña de Herramientas/Tools seleccionamos la Placa en la que se desea subir el codigo y tambien seleccionamos el Puerto al que este conectado el microocontrolador.</li>
  <li>Darle al boton de "Subir/Upload".</li>
@@ -35,7 +34,13 @@ Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
 Lo que se espera del código "CodigoEmisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
 
 <strong>ClienteEmisor.py: (Instrucciones del codigo de python)</strong>
-
+<ul>
+ <li>Desde la ubicacion del archivo "Cliente emisor.py" abrir la consola (cmd) y ejecutar el programa.</li>
+ <ul>
+  <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\ExamenU3_1></i><b>python ClienteEmisor.py</b></li>
+ </ul>
+ <li></li>
+</ul>
 
 # Servidor
 (Explicacion del servidor)<br>
