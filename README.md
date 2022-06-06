@@ -1,5 +1,5 @@
 # Examen #3 Examen Práctico (Editando...)
-
+###### <sub> </sub>
 ## Contenido
 1. [Resumen](#Resumen) 
 2. [Cliente emisor](#Cliente-emisor)
@@ -12,6 +12,8 @@
 ![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
 
 El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
+
+[Inicio](#-) 
 
 # Cliente emisor
 
