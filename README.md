@@ -91,8 +91,11 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
   <ul>
    <li><b>Ejemplo:</b><br>
     <i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm install</b><br></li>
-  </ul>
+  </ul></ul>
+  
+  <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/npminstall.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/><br>
   esto crea dos nuevos elementos en la carpeta de trabajo, una carpeta llamada <b>"node_modules"</b> que es donde se almacenan todas las dependencias y librerías que utilizas en tu proyecto nodejs y el <b>"package-lock.json"</b> que es como un historial de las operaciones <i>npm</i> que modifiquen el <b>"node_modules"</b>.</li>
+ <ul>
  <li>Ahora desde la consola en la carpeta de trabajo hay que escribir lo siguiente:
  <ul>
    <li><b>Ejemplo:</b><br>
