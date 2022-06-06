@@ -5,18 +5,15 @@
 2. [Cliente emisor](#Cliente-emisor)
 3. [Servidor](#Servidor)
 4. [Cliente receptor](#Cliente-receptor)
-5. [Prueba](#Prueba)
 
-<h1>Prueba</h1>
-
-# Resumen <sub>[Contenido](#-)</sub>
+# Resumen 
 </A><i>Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets.</i>
 
 ![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
 
 El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 
-# Cliente emisor <sub>[Contenido](#-)</sub>
+# Cliente emisor 
 
 ### Circuito
 Los materiales que se utilizaron son: <br>
@@ -55,7 +52,7 @@ Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valo
 
 Lo que se espera del código "ClienteEmisor.py" es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 
-# Servidor <sub>[Contenido](#-)</sub>
+# Servidor 
 Para tener el servidor desde tu computadora hacer lo siguiente:<br>
 En caso de tener un modem de INFINITUM ingresar a http://192.168.1.254/login.html y buscar el apartado "DMZ" (Demilitarized Zone ó Zona desmilitarizada) y activamos la función DMZ.<br>
 Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección "Reenvió de Puertos" definimos un puerto nuevo y especificamos que se trata de un Protocolo TCP.<br>
@@ -79,6 +76,6 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 
 Lo que se espera del código <b>"main.js"</b> es que reciba la coneccion del <b>cliente emisor</b> y se conecte con el <b>cliente receptor</b> para enviar los datos leídos del arduino y poder realizar diferentes acciones en el <b>cliente receptor</b>.
 
-# Cliente receptor <sub>[Contenido](#-)</sub>
+# Cliente receptor 
 
 <sub>[Contenido](#-)</sub> 
