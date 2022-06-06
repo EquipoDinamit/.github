@@ -67,12 +67,12 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
    <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm install</b></li>
   </ul>
   esto crea dos nuevos elementos en la carpeta de trabajo, una carpeta llamada <b>"node_modules"</b> que es donde se almacenan todas las dependencias y librerías que utilizas en tu proyecto nodejs y el <b>"package-lock.json"</b> que es como un historial de las operaciones <i>npm</i> que modifiquen el <b>"node_modules"</b>.</li>
- <ul>Ahora desde la consola en la carpeta de trabajo hay que escribir lo siguiente:
+ <li>Ahora desde la consola en la carpeta de trabajo hay que escribir lo siguiente:
  <ul>
    <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm start</b></li>
   </ul>
- como resultado en la consola se despliega el mensaje "Servidor corriendo en http://localhost:80" y con eso sabemos que todo salió bien.</ul>
- <ul></ul>
+ como resultado en la consola se despliega el mensaje "Servidor corriendo en http://localhost:80" y con eso sabemos que todo salió bien.</li>
+ <li></li>
 </ul>
 
 # Cliente receptor 
