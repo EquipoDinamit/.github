@@ -1,5 +1,11 @@
 # Examen #3 Examen Práctico (Editando...)
-<i>Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets.</i>
+
+## Table of Contents
+1. [Cliente emisor](#Cliente-emisor)
+2. [Servidor](#Servidor)
+3. [Cliente receptor](#Cliente-receptor)
+
+</A><i>Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets.</i>
 
 ![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
 
