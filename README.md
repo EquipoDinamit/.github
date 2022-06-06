@@ -134,7 +134,8 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
  </ul>
 </div>
 
-Gracias por leer hasta el final <3
+
+<b>Gracias por leer hasta el final <3</b>
 
 <div align="right">
  
