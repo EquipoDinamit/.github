@@ -1,9 +1,9 @@
 # Examen #3 Examen Práctico (Editando...)
 <i>Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets.</i>
 
-![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
+![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
 
-El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b><u>cliente receptor</u></b> (página web con html) y el <b><u>servidor</u></b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
+El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 
 # Cliente emisor
 
@@ -39,8 +39,9 @@ Lo que se espera del código "CodigoEmisor.ino" es que cada botón nos regrese u
  <ul>
   <li><i>C:\Users\minim\Desktop\Sistema de Computo y Redes\ExamenU3_1></i><b>python ClienteEmisor.py</b></li>
  </ul>
- <li></li>
 </ul>
+
+Lo que se espera del código es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 
 # Servidor
 (Explicacion del servidor)<br>
