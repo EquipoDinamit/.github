@@ -110,7 +110,7 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
    
   <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/login.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/></li>
   <li>Una vez hecho <i>login</i> ingresamos a la página de inicio donde podemos navegar con los botones "5" y "6" del circuito emisor.</li>
-  <li>Por último disfrutar de los jueguitos.</li>
+  <li>Por último a disfrutar de los jueguitos.</li>
  </ul>
 </div>
 
