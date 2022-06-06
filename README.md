@@ -1,5 +1,5 @@
 # Examen #3 Examen Práctico (Editando...)
-###### <sub> </sub>
+######  
 ## Contenido
 1. [Resumen](#Resumen) 
 2. [Cliente emisor](#Cliente-emisor)
@@ -76,4 +76,4 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 
 # Cliente receptor 
 
-[Inicio](#-) 
+[Contenido](#-) 
