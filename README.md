@@ -42,8 +42,8 @@ Los botones tienen asignados los números del 1 al 6 y el 13, además, cada bot�
  <li>En la pestaña de Herramientas/Tools seleccionamos la Placa en la que se desea subir el codigo y tambien seleccionamos el Puerto al que este conectado el microocontrolador.</li>
  <li>Darle al boton de "Subir/Upload".</li>
 </ul>
-Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor. 
-
+Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor.<br>
+ 
 <b>ClienteEmisor.py:</b>
 <ul>
  <li>Desde la ubicacion del archivo "Cliente emisor.py" abrir la consola (cmd) y ejecutar el programa.</li>
