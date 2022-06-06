@@ -53,7 +53,9 @@ Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección
 <b>main.js:</b><br>
 Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 <ul>
- <li></li>
+ <li>Tener descargados por lo menos el "package.json" y el servidor "main.js" en la carpeta que se está trabajando.</li>
+ <li>Desde la ubicación dentro de la carpeta abrir la consola (cmd) y escribir lo siguiente:<br>
+  C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm install</b></li>
 </ul>
 
 # Cliente receptor 
