@@ -3,7 +3,7 @@
 
 ![tcpserver](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del modelo TCP Cliente-Servidor")
 
-El <u>sistema</u> se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b><u>cliente receptor</u></b> (página web con html) y el <b><u>servidor</u></b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
+El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b><u>cliente receptor</u></b> (página web con html) y el <b><u>servidor</u></b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 
 # Cliente emisor
 
