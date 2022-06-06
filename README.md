@@ -62,6 +62,8 @@ El nombre de usuario ingresado será el que se use para validar el acceso en el 
 Lo que se espera del código "ClienteEmisor.py" es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 </div>
 
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
+
 <sub>[Contenido](#-)</sub> 
 
 # Servidor 
@@ -90,10 +92,12 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
    <li><b>Ejemplo:</b><br>
     <i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>npm start</b><br></li>
   </ul>
- como resultado en la consola se despliega el mensaje <b>"Servidor corriendo en http://localhost:80"</b> y con eso sabemos que todo salió bien.</li>
+ como resultado en la consola se despliega el mensaje <b>"Servidor corriendo en http://localhost:80"</b>, ademas deberiamos poder recivir conecciones desde el <b>"ClienteEmisor.py"</b>. Y con eso sabemos que todo salió bien.</li>
 </ul>
+ 
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/servidor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
-Lo que se espera del código <b>"main.js"</b> es que reciba la coneccion del <b>cliente emisor</b> y se conecte con el <b>cliente receptor</b> para enviar los datos leídos del arduino y poder realizar diferentes acciones en el <b>cliente receptor</b>.
+ Lo que se espera del código <b>"main.js"</b> es que reciba la coneccion del <b>cliente emisor</b> y se conecte con el <b>cliente receptor</b> para enviar los datos leídos del arduino y poder realizar diferentes acciones en el <b>cliente receptor</b>.
 <div/>
  
 <sub>[Contenido](#-)</sub> 
@@ -102,7 +106,9 @@ Lo que se espera del código <b>"main.js"</b> es que reciba la coneccion del <b>
 <div align="justify">
  El cliente receptor consta de varias páginas web en documentos html.
  <ul>
-  <li>La primera página a la que accedemos es <b>"index.html"</b> donde tenemos que hacer <i>login</i> con el nombre de usuario ingresado en el <b>"ClienteEmisor.py"</b>.</li>
+  <li>La primera página a la que accedemos es <b>"index.html"</b> donde tenemos que hacer <i>login</i> con el nombre de usuario ingresado en el <b>"ClienteEmisor.py"</b>.<br>
+   
+  <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/login.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/></li>
   <li>Una vez hecho <i>login</i> ingresamos a la página de inicio donde podemos navegar con los botones "5" y "6" del circuito emisor.</li>
   <li>Por último disfrutar de los jueguitos.</li>
  </ul>
