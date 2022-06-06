@@ -28,7 +28,7 @@ A continuacion armar el circuito de la imagen.
 
 <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/CircuitoEmisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 
-Los botones tienen asignados los números del 1 al 7 de izquierda a derecha.
+Los botones tienen asignados los números del 1 al 6 y el 13, además, cada botón con su respectivo número tiene una función diferente en el cliente receptor como se muestra en la imagen.
 
 ### Código
 
