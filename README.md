@@ -13,7 +13,7 @@ Los materiales que se utilizaron son: <br>
  <li>Arduino uno.</li>
  <li>8 resistenciias de 1k ohms.</li>
  <li>1 Protoboard.</li>
- <li>Push buttos.</li>
+ <li>7 Push buttos.</li>
 </ul>
 
 A continuacion armar el circuito de la imagen.
