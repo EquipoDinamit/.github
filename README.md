@@ -42,8 +42,8 @@ Los botones tienen asignados los números del 1 al 6 y el 13, además, cada bot�
  <li>En la pestaña de Herramientas/Tools seleccionamos la Placa en la que se desea subir el codigo y tambien seleccionamos el Puerto al que este conectado el microocontrolador.</li>
  <li>Darle al boton de "Subir/Upload".</li>
 </ul>
-Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor.<br>
- 
+<p>Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valor del 1 al 7 que será leído por el código "ClienteEmisor.py" y enviado al servidor.</p>
+
 <b>ClienteEmisor.py:</b>
 <ul>
  <li>Desde la ubicacion del archivo "Cliente emisor.py" abrir la consola (cmd) y ejecutar el programa.</li>
@@ -52,6 +52,10 @@ Lo que se espera del código "Emisor.ino" es que cada botón nos regrese un valo
     <i>C:\Users\minim\Desktop\Sistema de Computo y Redes\Examen></i><b>python ClienteEmisor.py</b><br></li>
  </ul>
 </ul>
+Lo anterior debería desplegar una pequeña ventana donde se puede seleccionar el puerto del arduino y se debe introducir el usuario y el servidor al que se quiere conectar. Y así sabemos que todo salio bien.<br>
+ 
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/interfaz.png" alt="Circuito Emisor" style="height: 30%; width:50%;"/>
+ 
 Lo que se espera del código "ClienteEmisor.py" es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 </div>
  
