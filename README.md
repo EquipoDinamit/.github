@@ -15,6 +15,8 @@
 El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
 </div>
 
+<sub>[Contenido](#-)</sub> 
+
 # Cliente emisor 
 
 ### Circuito
@@ -58,7 +60,9 @@ Lo anterior debería desplegar una pequeña ventana donde se puede seleccionar e
  
 Lo que se espera del código "ClienteEmisor.py" es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 </div>
- 
+
+<sub>[Contenido](#-)</sub> 
+
 # Servidor 
 <div align="justify">
 Para tener el servidor desde tu computadora hacer lo siguiente:<br>
@@ -90,6 +94,8 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 
 Lo que se espera del código <b>"main.js"</b> es que reciba la coneccion del <b>cliente emisor</b> y se conecte con el <b>cliente receptor</b> para enviar los datos leídos del arduino y poder realizar diferentes acciones en el <b>cliente receptor</b>.
 <div/>
+ 
+<sub>[Contenido](#-)</sub> 
  
 # Cliente receptor 
 <div align="justify">
