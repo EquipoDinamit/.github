@@ -74,6 +74,8 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
  como resultado en la consola se despliega el mensaje "Servidor corriendo en http://localhost:80" y con eso sabemos que todo salió bien.</li>
 </ul>
 
+Lo que se espera del código <b>"main.js"</b> es que reciba la coneccion del <b>cliente emisor</b> y se conecte con el <b>cliente receptor</b> para enviar los datos leídos del arduino y poder realizar diferentes acciones en el <b>cliente receptor</b>.
+
 # Cliente receptor 
 
-[Contenido](#-) 
+<sub>[Contenido](#-)</sub> 
