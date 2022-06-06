@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+   <style>
+      body{
+        position: relative;
+        background-image: url(fondo.jpg);
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        background-size: cover;
+        
+      }
+      #titulo{
+      text-align: center;
+      margin-top: 15px;
+      color: rgb(79, 119, 45);
+      font-family: 'Inconsolata', monospace;
+      }
+      #subtitulo{
+      margin-left: 50px;
+      text-align: left;
+      line-height: 1.8; 
+      color: rgb(49, 87, 44);
+      font-family: 'Inconsolata', monospace;
+      }
+      .contenido {
+        padding-top: 190px;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+      }
+
+      .contenido .equipo{
+        padding-top: 40px;
+      }
+      .contenido .equipo h1{
+        font-size:47px;
+        font-weight: 600;
+        line-height: 1.5; 
+        margin: 20px 0px 20px;
+      } 
+      span{
+        color: rgb(144, 169, 85);
+      }
+      .equipo p{
+        margin-left: 80px;
+        width: 1150px;
+        max-width: 100%;
+        font-size: 16px;
+        text-align: justify;
+      }
+      .repositorio a{
+        width: 37px;
+        height: 37px;
+        margin-left: 50px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+        color: black;
+      }
+      .bottom{
+        padding-top:300px;
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+      }
+
+      .proto {
+        position: relative;
+        padding-left: 130px;
+        padding-top: 30px; 
+        padding-bottom: 10px;   
+        }
+      .proto .imag{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  <body>
+      <div class="container">
+        <div class="lbl-menu">
+          <label for="radio1">Inicio</label>
+          <label for="radio2">Tetris</label>
+          <label for="radio3">Snake</label>
+          <label for="radio4">Dino</label>
+        </div>
+        <div class="content">
+          <input type="radio" name="radio" id="radio1" checked>
+          <div class="tab1">
+          </div>
+          <input type="radio" name="radio" id="radio2">
+          <div class="tab2">
+          </div>
+          <input type="radio" name="radio" id="radio3">
+          <div class="tab3">
+          </div>
+          <input type="radio" name="radio" id="radio4">
+        </div>
+      </div>
+      <h1 id="titulo"> Bienvenido</h1>
+    <section>
+     <div class="Contenido"> 
+        <div class="equipo">
+          <h2 id="subtitulo"> Examen 3</h2>
+          <h1 id="subtitulo">Integrantes: <span class="input"></span></h1>
+          <p>
+            Esta página es una recopilación de tres juegos con tematica retro, 
+            en la imagen de muestra se puede observar la composición del control con el cual se podrá mover
+            entre pestañas y controlar los juegos. El botón en la parte inferior izquiera lo rediccionara al 
+            respositorio de github donde se encuentran los códigos fuente de los juegos y estructura de la página.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="proto">
+          <div class="imag"><img src="proto.png" width="1100" height="400" ></div>
+      </div>
+    </section>
+    <section>
+      <div class="bottom">
+        <div class="repositorio">
+          <a href="https://github.com/EquipoDinamit/Examen3"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      const socket = io();
+      var typed= new Typed(".input", {
+        strings:["Cipriano Mario.","Coronel Lizbeth.","Felix Jesús.","Gómez Alan.","Gómez Lizbeth.","Hermosillo Luis.",
+        "Lorenzana Iván.","Morales Josue.","Roque Gabriela.","Sánchez Tabatha.","Suarez Jennifer."],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop:true
+      });
+      socket.on('msg', function (data) {
+        console.log(data);
+        if (data == 6) {
+          location.assign("PaginasExtras/tetris.html");
+        } else if (data == 5) {
+          location.assign("PaginasExtras/dino.html");
+        }
+      });
+    </script>
+  </body>
+</html>

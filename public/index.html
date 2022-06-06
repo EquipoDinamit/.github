@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<div class="container" onclick="onclick">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
+    <form class="form" id="login">
+      <h1 class="form__title">Ingresar</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input type="text" class="form__input" placeholder="Ingrese nombre" autofocus id='tabathaTOP' required>
+        <div class="form__input-error-message"></div>
+      </div>
+      <button type="submit" class="btn">Verificar</button>
+      <h2>&nbsp;</h2>
+    </form>
+  </div>
+</div>
+  <script src='https://codepen.io/banik/pen/ReNNrO/3f837b2f0085b5125112fc455941ea94.js'></script>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script>
+    const socket = io();
+    var nombresUsuarios = ['ivan'];
+    var valido = false;
+
+    // Escuchando el evento de nombre y luego empujando el nombre a la matriz nombresUsuarios.
+    socket.on('name', function(nombre){
+      console.log("Nombre recibido: ",nombre);
+      nombresUsuarios.push(nombre);
+
+    });
+
+    // Una función que se utiliza para establecer el mensaje del formulario.
+    function setFormMessage(formElement,type,message){
+      const messageElement=formElement.querySelector(".form__message");
+      messageElement.textContent=message;
+      messageElement.classlist.remove("form__message--success","form__message--error");
+      messageElement.classlist.add(`form__message--${type}`);
+    }
+    // Agregar una clase al elemento de entrada y establecer el contenido de texto del elemento
+    // principal.
+    function setInputError(inputElement, message) {
+        inputElement.classList.add("form__input--error");
+        inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+    }
+
+    // Eliminación del mensaje de error del campo de entrada.
+    function clearInputError(inputElement) {
+        inputElement.classList.remove("form__input--error");
+        inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginForm = document.querySelector("#login");
+
+      loginForm.addEventListener("submit", e => {
+        e.preventDefault();
+
+        for(var i = 0; i < nombresUsuarios.length; i++) {
+          if(document.querySelector('input').value == nombresUsuarios[i]) {
+            //setFormMessage(loginForm, "success", "Bienvenido");
+            location.href = "./MenuPrincipal/menu.html";
+            valido = true;
+          } 
+        }
+
+        if (!valido) {
+          setFormMessage(loginForm, "error", "Usuario incorrecto");
+        }
+    });
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+                setInputError(inputElement, "Username must be at least 10 characters in length");
+            }
+        });
+
+        inputElement.addEventListener("input", e => {
+            clearInputError(inputElement);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

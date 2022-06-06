@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Dino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="./stylesDino.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="lbl-menu">
+      <label for="radio1">Inicio</label>
+      <label for="radio2">Tetris</label>
+      <label for="radio3">Snake</label>
+      <label for="radio4">Dino</label>
+  </div>
+  </div>
+<div class="tab2">
+  <div id="board">
+      <div id="background">
+          <div id="scoreContainer">
+              Score: <span id="score">0</span>
+          </div>
+      </div>
+      <div id="player">
+          <img src="./assets/player.png" alt="player dino">
+      </div>
+      <div id="cactus" class="animatedCactus">
+          <img src="./assets/captus.png" alt="obstacle">
+      </div>
+  </div>
+  <div class="menu">
+      <button id='button-flow' class="button"></button>
+  </div>
+</div>
+
+</body>
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+<script>
+  const socket = io();
+
+
+  let score = 0;
+
+  const player = document.getElementById("player");
+
+  const scoreElement = document.getElementById("score");
+
+  const cactus = document.getElementById("cactus");
+
+  const background = document.getElementById('background');
+
+  const buttonFlow = document.getElementById("button-flow")
+
+  const board = document.getElementById("board")
+
+  let gameLoop;
+
+  socket.on('msg', function(data) {
+    console.log(data);
+    if(data==6){
+      location.assign("../menu.html");
+    }else if(data==5){
+      location.assign("./snake.html");
+    }else if(data==1){
+      player.classList.add("playerJump");
+    }
+    else if(data==13){
+      if (buttonFlow.classList.contains('play')) {
+          resumeGame();
+          buttonFlow.classList.remove('play')
+      }
+      else if (buttonFlow.classList.contains('reset')) {
+          resetGame();
+          buttonFlow.classList.remove('reset')
+      }
+      else {
+          pauseGame();
+          buttonFlow.classList.add('play')
+      }
+    }
+  });
+
+  player.addEventListener('animationend', () => {
+      player.classList.remove("playerJump");;
+  });
+
+  function checkCondition() {
+      if (
+          cactus.offsetLeft < (player.offsetLeft + 49)
+          && cactus.offsetLeft > player.offsetLeft
+          && (player.offsetTop >= (cactus.offsetTop - player.offsetHeight))
+      ) {
+          lostGame();
+      }
+      gameLoop = requestAnimationFrame(checkCondition)
+  }
+
+  let scoreInterval;
+
+  function lostGame() {
+      cancelAnimationFrame(gameLoop)
+      pauseGame();
+      buttonFlow.classList.add("reset")
+  }
+
+  function pauseGame() {
+      cactus.style.animationPlayState = 'paused';
+      player.style.animationPlayState = 'paused';
+      background.style.animationPlayState = 'paused';
+      clearInterval(scoreInterval);
+  }
+
+  function resumeGame() {
+      cactus.style.animationPlayState = 'running';
+      player.style.animationPlayState = 'running';
+      background.style.animationPlayState = 'running';
+  }
+
+  function resetScore() {
+      score = 0;
+      scoreElement.innerText = score;
+      scoreInterval = setInterval(() => {
+          score++;
+          scoreElement.innerText = score;
+      }, 1000)
+  }
+
+  function resetGame() {
+      resetAnimation();
+      resumeGame();
+      resetScore();
+      gameLoop = requestAnimationFrame(checkCondition);
+  }
+
+  function resetAnimation() {
+      cactus.classList.remove("animatedCactus");
+      player.classList.remove("playerJump");
+      void cactus.offsetWidth;
+      cactus.classList.add("animatedCactus");
+  }
+  window.addEventListener("load", () => {
+      resetGame();
+  })
+
+</script>
+</html>

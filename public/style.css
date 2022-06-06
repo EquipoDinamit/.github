@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  --color-error:#cc3333;
+  --color-success:#4bb544;
+  --border-radius:4px;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container:hover .top:before, .container:hover .top:after, .container:hover .bottom:before, .container:hover .bottom:after, .container:active .top:before, .container:active .top:after, .container:active .bottom:before, .container:active .bottom:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
+}
+.container:hover .center, .container:active .center {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.top:before, .top:after, .bottom:before, .bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200vmax;
+  height: 200vmax;
+  top: 50%;
+  left: 50%;
+  margin-top: -100vmax;
+  transform-origin: 0 50%;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  z-index: 10;
+  opacity: 0.65;
+  transition-delay: 0.2s;
+}
+
+.top:before {
+  transform: rotate(45deg);
+  background: #e46569;
+}
+.top:after {
+  transform: rotate(135deg);
+  background: #ecaf81;
+}
+
+.bottom:before {
+  transform: rotate(-45deg);
+  background: #60b8d4;
+}
+.bottom:after {
+  transform: rotate(-135deg);
+  background: #3745b5;
+}
+
+.btn {
+  --color: #e46569;
+  --hover: #e46569;
+  /*background-color: white; 
+  border: 2px solid #7777B0;
+  color: black;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;*/
+  cursor: pointer;
+}
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: var(--color);
+  transition: 0.25s;
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+
+}
+/*
+.btn:hover {
+  background-color: #7777B0;
+  color: white;
+}*/
+.center{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay: 0s;
+  color: #333;
+}
+.form >*:last-child{
+  margin-bottom: 1rem;
+}
+
+.center input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.2rem;
+  font-family: inherit;
+}
+.center button {
+  margin-top: 7%;
+  margin-bottom: 0.2rem;
+}
+.form__message{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form__message--success{
+  color: var(--color-success);
+}
+.form__message--error{
+  color: var(--color-error);
+}
+.form__title{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form__input-group{
+  margin-bottom: 0.2rem;
+}
+.form__input{
+  display: block;
+  width: 100%;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s border-color 0.2s;
+}
+.form__input:focus{
+  background: #ffffff;
+  border-color: #7777B0;
+}
+.form__input--error{
+  color: var(--color-error);
+  border-color: var(--color-error); 
+}
+.form__input-error-message{
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+.form__button:active{
+  transform: scale(0.98);
+}
+.form__text{
+  text-align: center;
+}
