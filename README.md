@@ -1,4 +1,4 @@
-# Examen #3 Examen Práctico (Editando...)
+# Examen #3 Examen Práctico
 ###### <sub> </sub>
 ## Contenido
 1. [Resumen](#Resumen) 
