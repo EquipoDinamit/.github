@@ -6,16 +6,19 @@ from time import sleep
 import serial.tools.list_ports
 import tkinter.ttk as ttk
 from tkinter import * 
-import threading
+from threading import *
+
 
 ventana = Tk()
+ventana.geometry("300x200")
 miFrame= Frame(ventana, width=300, height=200)
 miFrame.pack()
 
 comPort=StringVar()
 uso=StringVar()
 svr=StringVar()
-lectura=int()
+ 
+ 
 
 
 def serial_ports():
@@ -62,7 +65,14 @@ usuarioLabel.grid(row=1, column=0, sticky='e', padx=10, pady=10)
 servidorLabel=Label(miFrame, text='Servidor')
 servidorLabel.grid(row=2, column=0, sticky='e', padx=10, pady=10)
 
+def threading():
+	t1=Thread(target=codigoBoton)
+	t1.start()
+
+
+
 def codigoBoton():
+
 	"""
 	Lee el puerto serie, envía los datos al servidor y luego imprime los datos en la consola
 	"""
@@ -71,18 +81,23 @@ def codigoBoton():
 			comPort =cb.get()
 			uso = cuadroUsuario.get()
 			svr = cuadroServidor.get()
+
+			botonActualizar['state']=DISABLED
+			cuadroUsuario['state']=DISABLED
+			cuadroServidor['state']=DISABLED
+			cb['state']=DISABLED
 	except:
 		print('Rectifica lo ingrsado')		
-	cb['state']=DISABLED
-	botonActualizar['state']=DISABLED
-	cuadroUsuario['state']=DISABLED
-	cuadroServidor['state']=DISABLED
+
 	sio=socketio.Client()
 	@sio.event
 	def connect():
+		Label_1=Label(miFrame, text='conectado')
 		print('Conexión establecida')
 		sio.emit('id', 'emisor')
 		sio.emit('name', uso)
+		
+		Label_1.grid(row=3, column=1, sticky='e', padx=10, pady=10)
 	def send_msg(msg):
 		sio.emit('msg', msg)
 	@sio.event
@@ -106,16 +121,18 @@ def codigoBoton():
 		send_msg(lectura)
 		print(lectura)
 		sleep(0.1)
-		#Finaliza la conexion a arduino
-	sio.disconnect()
 	
-botonActualizar=Button(ventana, text='Conectar', command=codigoBoton)
+		#Finhttp://josuegregorio.duckdns.org/aliza la conexion a arduino
+	sio.disconnect()
+ 
+	
+botonActualizar=Button(ventana, text='Conectar', command=threading)
 botonActualizar.place(x=120, y=130)
-#botonActualizar.pack()
+
+
 
 ventana.title("Examen3")
 ventana.call('wm','iconphoto', ventana._w, PhotoImage(file='logo.png'))
-ventana.geometry("300x200")
 ventana.mainloop()
 
 
