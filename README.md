@@ -134,25 +134,27 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
  <li>Por último a disfrutar de los jueguitos.</li>
  </ul>
  <ul>
+ <ul>
   <li><i>Tetris<i></li>
+ </ul>
  </ul>
  
  <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/tetris.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
-  <li><i>Snake<i></li>
- 
- 
- <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/snake.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
-
- <li><i>Dino<i></li>
- 
- <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/dino.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
-   <ul>
- 
+ <ul> 
+ <ul>
+ <li><i>Snake<i></li>
  </ul>
-</div>
+ </ul>
+ <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/snake.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
+ <ul>
+ <ul>
+ <li><i>Dino<i></li>
+ </ul>
+ </ul>
+<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/dino.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
 </div>
 
-
+<br><br>
 <b>Gracias por leer hasta el final <3</b>
 
 <div align="right">
