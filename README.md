@@ -62,7 +62,7 @@ Lo anterior debería desplegar una pequeña ventana donde se puede seleccionar e
 <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/interfaz.png" alt="Circuito Emisor" style="height: 30%; width:50%;"/><br>
 El nombre de usuario ingresado será el que se use para validar el acceso en el <b>"index.html"</b>.<br>
  
-Lo que se espera del código "ClienteEmisor.py" es que pueda conectarse con el servidor cuando el "main.js" se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
+ Lo que se espera del código <b>"ClienteEmisor.py"</b> es que pueda conectarse con el servidor cuando el <b>"main.js"</b> se esté ejecutando y que le mande la información leída del arduino para que el servidor la envíe al cliente receptor.
 </div>
 
 <img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/emisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
@@ -86,7 +86,7 @@ Buscar el apartado "Mapeo de Puertos/Port Mapping" y una vez ahí en la sección
 <b>main.js:</b><br>
 Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
 <ul>
- <li>Tener descargados por lo menos el "package.json" y el servidor "main.js" en la carpeta que se está trabajando.</li>
+ <li>Tener descargados por lo menos el <b>"package.json"</b> y el servidor <b>"main.js"</b en la carpeta que se está trabajando.</li>
  <li>Desde la ubicación dentro de la carpeta abrir la consola (cmd) y escribir lo siguiente:
   <ul>
    <li><b>Ejemplo:</b><br>
